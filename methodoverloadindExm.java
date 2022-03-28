@@ -1,4 +1,4 @@
-package Bank;
+package project1;
 class A
 {
 	public int add (int a,int b)
