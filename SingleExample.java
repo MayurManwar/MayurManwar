@@ -1,4 +1,4 @@
-package Inheritance;
+package Bank;
 
 class Bank
 {
@@ -26,9 +26,9 @@ class sbi extends  Bank
 	{
 		int x=200;
 		System.out.print("Bank name:"+Bank_name);
-		System.out.print("display:"+x);
-		System.out.print("child:"+this.x);
-		System.out.print("parent:"+super.x);
+		System.out.print(" display: "+x);
+		System.out.print(" child: "+this.x);
+		System.out.print(" parent: "+super.x);
 	}
 	
 }
