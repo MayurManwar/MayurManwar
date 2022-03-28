@@ -1,3 +1,4 @@
+package Bank;
 
 class bank_info
 {
@@ -42,7 +43,7 @@ public class bankInfo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		bank_info bobj=new bank_info();
-		bobj.set_data(123, "abc", 10000);
+		bobj.set_data(12345, "Mayur Manwar", 10000);
 		bobj.putdata();
 		bobj.withdraw(500);
 		
