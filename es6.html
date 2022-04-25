@@ -1,0 +1,55 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> Jacascript</title>
+</head>
+<body>
+<h1>defult parameter</h1>
+<html>
+<head>
+<title> my title</title>
+</head>
+<body>
+
+
+<script>
+let guestuser=function(name,count=3){
+//return 'hello'+ name + ', your course count is:'+ count;}
+return'hello ${MAYUR},your course count is:${count}';
+}
+
+
+console.log(guestuser());
+
+function fun(...param)
+{
+console.log(param);
+}
+
+
+fun();
+fun(2);
+fun(5,6,7);
+
+
+var dowhatever=['have fun','have office','not getting time for fun'];
+var life=['born','learn to talk','learn js',...dowhatever,'go to  heaven'];
+console.log(life);
+
+var a=[1,2,3];
+var b=[5,6,7,8,9];
+a.push(...b);
+console.log(a);
+
+
+ var s='nevar gonna give you up';
+var html='<div>${s}</div>';
+console.log(html);
+
+
+
+</script>
+</body>
+
+
