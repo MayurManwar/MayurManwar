@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>my title </title>
+</head>
+<p id="hello"></p>
+<p id="result"></p>
+
+<script>
+//write test string inside an element
+document.getElementById("hello").innerHTML="hello world";
+
+var x=40;
+var y=50;
+var sum=x+y;
+document.getElementById("result").innerHTML=sum;
+
+
+//declare array
+
+//var myArray=[2,5,6,9,10];
+//vararr=new Array(5,8,4,2);
+
+
+var color=["red","green","yellow"];
+var person=["mayur", "pune" ,32,56000,true];
+document.write(" length of array: " + color[color.length-1]+"<br>");
+
+for(var i=0; i< person.length;i++)
+{
+document.write(" person: "+ person[i]+"<br>");
+}
+
+// for of loop
+for( var p of color)
+{
+document.write(" person: "+ p + "<br>");
+}
+
+//...for in loop
+for( var per in person)
+{
+document.write(" person: "+ person[per]+"<br><br>");
+}
+//add at last
+color.push("blue");
+document.write(color);
+//add at fast
+color.unshift("white");
+document.write("<br>"+color);
+
+color.pop();
+document.write("<br>"+color);
+
+color.shift();
+document.write("<br>"+color);
+
+
+
+var remove=color.splice(1,1);
+document.write("<br>"+color);
+document.write("<br>"+remove);
+
+color.splice(1,0,"purple","voilet","orange");
+document.write("<br>"+color);
+
+color.splice(1,1,"pink");
+document.write("<br>"+color);
+
+var  fruits=["apple", "banana","kiwi","mango", "orange","papaya"];
+document.write("<br>" +fruits.slice(2,3ss));
+
+var marge=color.concat(fruits);
+document.write("<br>"+marge);
+
+</script>
+</body>
