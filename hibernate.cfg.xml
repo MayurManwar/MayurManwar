@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	
+	<hibernate-configuration>
+	<session-factory>
+	<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+	<property name="connection.url">jdbc:mysql://localhost:3306/anudip</property>
+	<property name="connection.username">root</property>
+	<property name="connection.password">Sujata@123</property>
+	<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+	<property name="hbm2ddl.auto">update</property>
+	<!--  <property name="show_sql">true</property>
+	<property name="format_sql"></property>-->
+	<property name="hibernate.cache.use_second_level_cache">true</property>
+	<property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+	
+	<!--  <mapping class="com.hibernate.User"></mapping>
+	<mapping class="com.hibernate.Address"/>
+	<mapping class="com.hibernate.Certificate"/>-->
+	
+	<!--  <mapping class="joinOperation.Question"/>
+	<mapping class="joinOperation.Answer"/>
+	<mapping class="com.hibernate.employee"/>-->
+	
+	<!--  
+	<mapping class="joinOperation.Student"/>
+	<mapping class="joinOperation.teacher"/>
+	-->
+	<!--<mapping resource="com/hibernate/Students.hbm.xml"/> -->
+	
+	<!--  <mapping class="chacheDemo.Person"/> 
+	
+	-<mapping class="HqlOperstion.Book"/>-->
+	
+	<mapping class="bank_Transaction.Bank"/>
+	
+	
+	</session-factory>
+	
+	</hibernate-configuration>
