@@ -1,67 +1,56 @@
-package studentManagment;
+package joinOperation;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Student {
-	private int studentId;
-	private String StudentName;
-	private String StudentMobile;
-	private String StudentCity;
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private  int sid;
+	private String student;
+	private int sno;
+	
 
-	public Student(int studentId, String studentName, String studentMobile, String studentCity) {
-		super();
-		this.studentId = studentId;
-		StudentName = studentName;
-		StudentMobile = studentMobile;
-		StudentCity = studentCity;
+	public int getSid() {
+		return sid;
 	}
-
-	public Student(String studentName, String studentMobile, String studentCity) {
-		super();
-		StudentName = studentName;
-		StudentMobile = studentMobile;
-		StudentCity = studentCity;
+	
+	public void setSid(int sid) {
+		this.sid = sid;
 	}
-
-	public Student() {
-		super();
-		// TODO Auto-generated constructor stub
+	
+	public String getStudent() {
+		return student;
 	}
-
-	public int getStudentId() {
-		return studentId;
+	
+	public void setStudent(String student) {
+		this.student = student;
 	}
-
-	public void setStudentId(int studentId) {
-		this.studentId = studentId;
+	
+	public int getSno() {
+		return sno;
 	}
-
-	public String getStudentName() {
-		return StudentName;
+	
+	public void setSno(int sno) {
+		this.sno = sno;
 	}
-
-	public void setStudentName(String studentName) {
-		StudentName = studentName;
-	}
-
-	public String getStudentMobile() {
-		return StudentMobile;
-	}
-
-	public void setStudentMobile(String studentMobile) {
-		StudentMobile = studentMobile;
-	}
-
-	public String getStudentCity() {
-		return StudentCity;
-	}
-
-	public void setStudentCity(String studentCity) {
-		StudentCity = studentCity;
-	}
-
 	@Override
 	public String toString() {
-		return "Student [studentId=" + studentId + ", StudentName=" + StudentName + ", StudentMobile=" + StudentMobile
-				+ ", StudentCity=" + StudentCity + "]";
+		StringBuilder builder = new StringBuilder();
+		builder.append("Student [sid=");
+		builder.append(sid);
+		builder.append(", student=");
+		builder.append(student);
+		builder.append(", sno=");
+		builder.append(sno);
+		builder.append("]");
+		return builder.toString();
 	}
+	
+	
 
 }
